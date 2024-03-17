@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo.png" alt="Logo"><img src="img/michi.png" alt="Michi" id="gato"></h1>
+    </header>
+
+    <main>
+
+        <ul>
+            <li>
+                <div class="entrada">
+                    <textarea required id="texto-entrada" type="text" pattern="[a-z ]" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="terminos">
+                        <p>Solo letras minúsculas, sin acentos y sin caracteres especiales.</p>
+                    </div>
+                    
+                    <div>
+                        <button onclick="encriptar();" id="btn-cifrar">Encriptar</button>
+                        <button onclick="desencriptar();" id="btn-decifrar">Desencriptar</button>
+                    </div>
+                </div>    
+            </li>
+
+            <li id="li-salida">
+                <div class="salida">
+                    <div id="container-nino">
+                        <img id="imagen-muneco" src="img/nino.png" alt="imagen de un muñeco">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                    <div id="container-salida">
+                        <textarea id="texto-salida" type="text" readonly></textarea>
+                        <div>
+                            <button onclick="copiar();" id="btn-copiar">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>Encriptador Alura     -      Armando Olmos 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
